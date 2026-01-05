@@ -19,12 +19,12 @@
     "postbuild": "echo 'Build completed - sitemap generation disabled'",
     "prepare": "husky install",
     "vercel-build": "pnpm gen:manifest && pnpm copy:version && next build",
-    "pages:build": "pnpm gen:runtime && pnpm gen:manifest && next build && npx @cloudflare/next-on-pages --experimental-minify"，
+    "pages:build": "pnpm gen:runtime && pnpm gen:manifest && next build && npx @cloudflare/next-on-pages --experimental-minify",
     "docker:build": "docker build -t decotv .",
     "docker:run": "docker run -p 3000:3000 decotv"
   },
   "dependencies": {
-    "@cloudflare/next-on-pages": "^1.13.12",
+     "@cloudflare/next-on-pages": "^1.13.12",
     "@dnd-kit/core": "^6.3.1",
     "@dnd-kit/modifiers": "^9.0.0",
     "@dnd-kit/sortable": "^10.0.0",
